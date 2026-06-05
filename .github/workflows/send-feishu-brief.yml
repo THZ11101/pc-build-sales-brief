@@ -1,0 +1,27 @@
+name: Send Feishu Brief
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Brief date YYYY-MM-DD
+        required: true
+        default: '2026-06-05'
+  schedule:
+    # 09:00 Asia/Shanghai = 01:00 UTC
+    - cron: '0 1 * * *'
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Send Feishu card
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          BRIEF_BASE_URL: https://thz11101.github.io/pc-build-sales-brief
+          BRIEF_DATE: ${{ github.event.inputs.date || '2026-06-05' }}
+        run: node scripts/send-feishu-brief.js
