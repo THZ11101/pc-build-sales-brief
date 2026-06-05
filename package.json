@@ -1,0 +1,14 @@
+{
+  "name": "pc-build-sales-brief",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-daily-brief.js",
+    "render": "node scripts/render-brief.js",
+    "share": "node scripts/generate-share-image.js",
+    "validate": "node scripts/validate-brief.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

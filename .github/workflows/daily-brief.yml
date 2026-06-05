@@ -1,0 +1,101 @@
+name: Daily Brief
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Brief date YYYY-MM-DD, default is today in Asia/Shanghai
+        required: false
+        default: ''
+      force:
+        description: Regenerate even if brief-data already exists
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+  schedule:
+    # 08:30 Asia/Shanghai = 00:30 UTC
+    - cron: '30 0 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-publish-send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Resolve date
+        id: date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            BRIEF_DATE="${{ github.event.inputs.date }}"
+          else
+            BRIEF_DATE="$(TZ=Asia/Shanghai date +%F)"
+          fi
+          echo "date=$BRIEF_DATE" >> "$GITHUB_OUTPUT"
+      - name: Generate brief data
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1' }}
+          BRIEF_DATE: ${{ steps.date.outputs.date }}
+          FORCE: ${{ github.event.inputs.force == 'true' && '1' || '0' }}
+        run: node scripts/generate-daily-brief.js --date "$BRIEF_DATE"
+      - name: Render site
+        env:
+          BRIEF_DATE: ${{ steps.date.outputs.date }}
+        run: |
+          node scripts/render-brief.js "$BRIEF_DATE"
+          node scripts/generate-share-image.js --date "$BRIEF_DATE"
+          node skills/ai-industry-brief/scripts/check-brief-dedup.js "brief-data/$BRIEF_DATE.json"
+          BRIEF_DATE="$BRIEF_DATE" node scripts/validate-brief.js
+      - name: Commit and push changes
+        id: commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add brief-data briefs share-images index.html color-palette-demo.html
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No generated changes."
+          else
+            git commit -m "chore: publish daily brief ${{ steps.date.outputs.date }}"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Wait for GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        shell: bash
+        env:
+          BRIEF_URL: https://thz11101.github.io/pc-build-sales-brief/briefs/${{ steps.date.outputs.date }}.html
+          IMAGE_URL: https://thz11101.github.io/pc-build-sales-brief/share-images/${{ steps.date.outputs.date }}.png
+        run: |
+          for i in {1..30}; do
+            if curl -fsSL "$BRIEF_URL" >/dev/null && curl -fsSL "$IMAGE_URL" >/dev/null; then
+              echo "Pages is ready."
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Pages did not become ready in time; Feishu will still send links."
+      - name: Send Feishu card
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          BRIEF_BASE_URL: https://thz11101.github.io/pc-build-sales-brief
+          BRIEF_DATE: ${{ steps.date.outputs.date }}
+        run: node scripts/send-feishu-brief.js

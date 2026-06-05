@@ -1,5 +1,6 @@
 # local build/cache
 dist/
+node_modules/
 .edge-headless-profile/
 
 # alternate share-image drafts

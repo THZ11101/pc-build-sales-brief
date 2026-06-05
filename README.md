@@ -9,6 +9,18 @@
 - 分享图：`share-images/2026-06-05.png`
 - 数据源：`brief-data/2026-06-05.json`
 
+## 每日自动化
+
+仓库已配置 GitHub Actions：
+
+- `Daily Brief`：每天 08:30（Asia/Shanghai）自动生成当天简报、渲染页面、生成分享图、提交发布并推送飞书。
+- `Send Feishu Brief`：手动重发指定日期的飞书卡片。
+
+需要的 Secrets：
+
+- `FEISHU_WEBHOOK`：飞书群机器人 Webhook。
+- `OPENAI_API_KEY`：用于每日联网生成新一期简报。
+
 ## GitHub Pages 发布建议
 
 1. 新建 GitHub 仓库。

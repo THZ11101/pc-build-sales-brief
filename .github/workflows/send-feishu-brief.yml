@@ -5,11 +5,8 @@ on:
     inputs:
       date:
         description: Brief date YYYY-MM-DD
-        required: true
-        default: '2026-06-05'
-  schedule:
-    # 09:00 Asia/Shanghai = 01:00 UTC
-    - cron: '0 1 * * *'
+        required: false
+        default: ''
 
 jobs:
   send:
@@ -19,9 +16,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Resolve date
+        id: date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            echo "date=${{ github.event.inputs.date }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_OUTPUT"
+          fi
       - name: Send Feishu card
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           BRIEF_BASE_URL: https://thz11101.github.io/pc-build-sales-brief
-          BRIEF_DATE: ${{ github.event.inputs.date || '2026-06-05' }}
+          BRIEF_DATE: ${{ steps.date.outputs.date }}
         run: node scripts/send-feishu-brief.js
