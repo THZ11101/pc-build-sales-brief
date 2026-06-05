@@ -1,0 +1,130 @@
+{
+  "date": "2026-06-05",
+  "weekday": "星期五",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "装机成交的关键，不是参数更多，而是需求问准。",
+  "insight": "今天的销售判断很清楚：电竞客户要先锁定分辨率、刷新率和外观偏好，生产力客户要先问软件、素材规模和交付周期。内存、SSD 与电源散热的成本上行，会把低价堆料变成售后风险；更稳的做法是按场景给配置余量。",
+  "methodNote": "本期面向 DIY 销售组装服务场景，来源优先采用 2026-05-29 至 2026-06-05 的官方发布；价格与供需判断补充近两个月权威机构资料，并在来源日期中标注。",
+  "homepage": {
+    "headline": "销售先问场景，再谈配置",
+    "summary": "电竞玩家看帧率和颜值，生产力玩家看稳定和交付；装机服务要把需求追问、配置余量和售后风险前置。",
+    "mobileSections": [
+      { "name": "电竞玩家机会", "summary": "用分辨率、高刷和外观偏好切预算。" },
+      { "name": "生产力玩家机会", "summary": "按软件、素材和显存内存给方案。" },
+      { "name": "配置与成本信号", "summary": "内存、SSD、电源散热决定利润和风险。" },
+      { "name": "销售话术与服务", "summary": "把参数转成可成交的追问和承诺。" }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "FPS · 2K HIGH REFRESH · LOOKS",
+      "items": [
+        {
+          "title": "RTX Spark PC | 引导高端玩家加预算",
+          "description": "NVIDIA 与微软发布 RTX Spark Windows PC，强调本地 AI 与 128GB 统一内存。面对高端电竞玩家，可把“游戏+直播+AI创作”打包成升级理由。",
+          "sourceName": "NVIDIA Investor News",
+          "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Microsoft-Reinvent-Windows-PCs-for-the-Age-of-Personal-AI/default.aspx",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "AMD AM5 | 适合讲长期升级",
+          "description": "AMD 表示 AM5 支持延至 2029，并推出 7700X3D 与 RX 9070 GRE。销售可把 AM5 作为“先买主板，后续换 CPU”的长期平台卖点。",
+          "sourceName": "AMD Blog",
+          "sourceUrl": "https://www.amd.com/en/blogs/2026/amd-computex-2026-10-years-of-am4-am5-support-through.html",
+          "sourceDateLabel": "2026-05-31"
+        },
+        {
+          "title": "MSI EZ DIY | 强化整机颜值单",
+          "description": "MSI 展示新 AM5 主板、液冷、机箱与 GPU Safeguard+ 电源。电竞客户重视晒图和安全感，套装化组件更容易讲清“好看且稳”。",
+          "sourceName": "MSI News",
+          "sourceUrl": "https://www.msi.com/news/detail/MSI-Elevates-PC-Customization-with-New-Components-at-COMPUTEX-2026-148787",
+          "sourceDateLabel": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "EDITING · RENDERING · LOCAL AI",
+      "items": [
+        {
+          "title": "Phison aiDAPTIV | 本地AI要问存储",
+          "description": "Phison 在 Computex 展示 Pascari aiDAPTIV AI PC 方案，把 SSD 纳入本地推理架构。生产力客户要追问模型、素材盘和缓存盘需求。",
+          "sourceName": "Business Wire",
+          "sourceUrl": "https://www.businesswire.com/news/home/20260601070396/en/Phison-Unlocks-Full-Scale-AI-Deployment-Across-Industries",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "TEAMGROUP 高容DDR5 | 推荐64GB起步",
+          "description": "TEAMGROUP 展示 64GBx2 XTREEM DDR5 与 PCIe Gen5 SSD。剪辑、渲染和多开客户不要只比 CPU，内存容量更容易影响体验和返工率。",
+          "sourceName": "TEAMGROUP News",
+          "sourceUrl": "https://www.teamgroupinc.com/en/news-detail/computex-2026/",
+          "sourceDateLabel": "2026-05-29"
+        },
+        {
+          "title": "RTX AI PC | 显存话术更重要",
+          "description": "RTX AI PC 叙事强化本地模型和创作负载。生产力客户应先问软件清单，如 PR、达芬奇、Blender 或本地 AI，再决定显卡和显存档位。",
+          "sourceName": "NVIDIA Investor News",
+          "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Microsoft-Reinvent-Windows-PCs-for-the-Age-of-Personal-AI/default.aspx#productivity-angle",
+          "sourceDateLabel": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "BOM · MEMORY · PSU MARGIN",
+      "items": [
+        {
+          "title": "TrendForce DRAM | 内存报价上行",
+          "description": "TrendForce 预计 2Q26 一般型 DRAM 合约价季增 58% 至 63%。销售报价要减少“低价临时单”，32GB 与 64GB 套餐需及时重算毛利。",
+          "sourceName": "TrendForce Press Center",
+          "sourceUrl": "https://www.trendforce.com/presscenter/news/20260331-12995.html",
+          "sourceDateLabel": "2026-03-31 · 最近官方参考"
+        },
+        {
+          "title": "CORSAIR AX1600i | 电源余量可溢价",
+          "description": "海盗船发布 AX1600i SHIFT 与透明 HX1000i，强调高功率和装机便利。高端显卡单不要压电源预算，稳定性就是售后成本。",
+          "sourceName": "CORSAIR Newsroom",
+          "sourceUrl": "https://www.corsair.com/newsroom/press-release/corsair-unveils-the-latest-innovation-in-cases-cooling-power-supplies-and-more-for-diy-pc-builders-at-computex-2026",
+          "sourceDateLabel": "2026-06-02"
+        },
+        {
+          "title": "IDC PC市场 | 短缺影响促销",
+          "description": "IDC 称内存及组件短缺将使 2026 年 PC 市场进入动荡期，并推动提前购买。销售应把“早锁配置”讲成风险管理，而不是催单。",
+          "sourceName": "IDC Resource Center",
+          "sourceUrl": "https://www.idc.com/resource-center/blog/pc-market-enters-volatile-territory-as-memory-shortage-persists-through-2027/",
+          "sourceDateLabel": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "QUESTIONS · AFTERSALES · TRUST",
+      "items": [
+        {
+          "title": "分辨率追问 | 先问显示器",
+          "description": "电竞客户只问显卡时，先确认 1080P、2K 还是 4K，以及目标刷新率。这样能把“贵不贵”转成“这张卡能不能喂饱屏幕”。",
+          "sourceName": "AMD Blog",
+          "sourceUrl": "https://www.amd.com/en/blogs/2026/amd-computex-2026-10-years-of-am4-am5-support-through.html#sales-question",
+          "sourceDateLabel": "2026-05-31"
+        },
+        {
+          "title": "软件清单 | 先问工作流",
+          "description": "生产力客户不要直接报配置，先问主用软件、素材分辨率、是否直播录屏和交付周期。配置单要围绕省时间，而不是堆最高参数。",
+          "sourceName": "TEAMGROUP News",
+          "sourceUrl": "https://www.teamgroupinc.com/en/news-detail/computex-2026/#workflow-question",
+          "sourceDateLabel": "2026-05-29"
+        },
+        {
+          "title": "散热承诺 | 写进服务单",
+          "description": "DeepCool 展示均热板、静音水冷和带屏机箱，说明散热体验已成卖点。交付时建议写明压力测试、噪音检查和走线照片，减少售后争议。",
+          "sourceName": "DeepCool News Release",
+          "sourceUrl": "https://www.deepcool.com/company/pressroom/newsrelease/2026/23123.shtml",
+          "sourceDateLabel": "2026-05-29"
+        }
+      ]
+    }
+  ]
+}

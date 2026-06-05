@@ -1,0 +1,12 @@
+{
+  "date": "YYYY-MM-DD",
+  "weekday": "星期五",
+  "industry": "电脑DIY",
+  "publicTitle": "The PC DIY Brief",
+  "chineseTitle": "每日电脑DIY简报",
+  "opening": "一句明确判断，50字以内。",
+  "insight": "跨栏目洞察，150字以内。",
+  "methodNote": "采集窗口与来源说明。",
+  "homepage": { "headline": "首页标题", "summary": "首页摘要", "mobileSections": [] },
+  "sections": []
+}

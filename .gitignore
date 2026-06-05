@@ -1,0 +1,10 @@
+# local build/cache
+dist/
+.edge-headless-profile/
+
+# alternate share-image drafts
+share-images/2026-06-05-sales-*.png
+
+# transient script variants
+scripts/fix-data.js
+scripts/generate-share-image-full-tight*.ps1
