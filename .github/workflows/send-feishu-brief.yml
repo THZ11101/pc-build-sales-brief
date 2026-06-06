@@ -30,6 +30,8 @@ jobs:
       - name: Send Feishu card
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           BRIEF_BASE_URL: https://thz11101.github.io/pc-build-sales-brief
           BRIEF_DATE: ${{ steps.date.outputs.date }}
         run: node scripts/send-feishu-brief.js
