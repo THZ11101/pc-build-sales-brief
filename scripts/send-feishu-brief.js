@@ -18,37 +18,99 @@ if (!fs.existsSync(dataPath)) {
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const briefUrl = `${baseUrl}/briefs/${date}.html`;
 const imageUrl = `${baseUrl}/share-images/${date}.png`;
+const imagePath = path.join(process.cwd(), 'share-images', `${date}.png`);
 
 const sectionLines = data.sections.map((section) => {
   const titles = section.items.map((item) => String(item.title).split('|')[0].trim()).join('、');
   return `**${section.name}**：${titles}`;
 }).join('\n');
 
-const payload = {
-  msg_type: 'interactive',
-  card: {
-    config: { wide_screen_mode: true },
-    header: {
-      template: 'green',
-      title: { tag: 'plain_text', content: `${data.chineseTitle}｜${date}` }
-    },
-    elements: [
-      { tag: 'markdown', content: `**${data.homepage.headline}**\n${data.homepage.summary}` },
-      { tag: 'img', img_key: '', alt: { tag: 'plain_text', content: '简报分享图' } },
-      { tag: 'markdown', content: sectionLines },
-      { tag: 'markdown', content: `📄 [阅读完整简报](${briefUrl})\n🖼️ [打开分享图](${imageUrl})` }
-    ]
-  }
-};
+async function getTenantAccessToken() {
+  const appId = process.env.FEISHU_APP_ID;
+  const appSecret = process.env.FEISHU_APP_SECRET;
+  if (!appId || !appSecret) return null;
 
-// Custom bots cannot send external image URLs directly in img_key without uploading media,
-// so remove the image block and keep the image URL as a clickable fallback.
-payload.card.elements = payload.card.elements.filter((element) => element.tag !== 'img');
+  const res = await fetch('https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify({
+      app_id: appId,
+      app_secret: appSecret,
+    }),
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`Feishu token HTTP ${res.status}: ${text}`);
+  const result = JSON.parse(text);
+  if (result.code !== 0 || !result.tenant_access_token) {
+    throw new Error(`Feishu token API error: ${text}`);
+  }
+  return result.tenant_access_token;
+}
+
+async function uploadImage() {
+  if (!fs.existsSync(imagePath)) return null;
+  const tenantAccessToken = await getTenantAccessToken();
+  if (!tenantAccessToken) return null;
+
+  const form = new FormData();
+  form.append('image_type', 'message');
+  const bytes = fs.readFileSync(imagePath);
+  form.append('image', new Blob([bytes], { type: 'image/png' }), `${date}.png`);
+
+  const res = await fetch('https://open.feishu.cn/open-apis/im/v1/images', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${tenantAccessToken}`,
+    },
+    body: form,
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`Feishu image HTTP ${res.status}: ${text}`);
+  const result = JSON.parse(text);
+  if (result.code !== 0 || !result.data || !result.data.image_key) {
+    throw new Error(`Feishu image API error: ${text}`);
+  }
+  return result.data.image_key;
+}
+
+function buildPayload(imageKey) {
+  const elements = [
+    { tag: 'markdown', content: `**${data.homepage.headline}**\n${data.homepage.summary}` },
+    { tag: 'markdown', content: sectionLines },
+    { tag: 'markdown', content: `📄 [阅读完整简报](${briefUrl})\n🖼️ [打开分享图](${imageUrl})` },
+  ];
+  if (imageKey) {
+    elements.splice(1, 0, {
+      tag: 'img',
+      img_key: imageKey,
+      alt: { tag: 'plain_text', content: '简报分享图' },
+    });
+  }
+
+  return {
+    msg_type: 'interactive',
+    card: {
+      config: { wide_screen_mode: true },
+      header: {
+        template: 'green',
+        title: { tag: 'plain_text', content: `${data.chineseTitle}｜${date}` },
+      },
+      elements,
+    },
+  };
+}
 
 (async () => {
+  let imageKey = null;
+  try {
+    imageKey = await uploadImage();
+  } catch (error) {
+    console.warn(`Image upload skipped: ${error.message}`);
+  }
+  const payload = buildPayload(imageKey);
   const res = await fetch(webhook, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
     body: JSON.stringify(payload)
   });
   const text = await res.text();
@@ -61,5 +123,5 @@ payload.card.elements = payload.card.elements.filter((element) => element.tag !=
     console.error(`Feishu API error: ${text}`);
     process.exit(1);
   }
-  console.log(`Sent Feishu brief card for ${date}: ${briefUrl}`);
+  console.log(`Sent Feishu brief card for ${date}: ${briefUrl}${imageKey ? ' with image' : ' without image'}`);
 })();

@@ -20,6 +20,7 @@
 
 - `FEISHU_WEBHOOK`：飞书群机器人 Webhook。
 - `OPENAI_API_KEY`：用于每日联网生成新一期简报。
+- `FEISHU_APP_ID` / `FEISHU_APP_SECRET`：可选，用于把分享图上传为飞书图片并嵌入卡片；未配置时只发送简报和分享图链接。
 
 ## GitHub Pages 发布建议
 
