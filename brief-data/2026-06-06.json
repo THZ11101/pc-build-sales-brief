@@ -1,0 +1,130 @@
+{
+  "date": "2026-06-06",
+  "weekday": "星期六",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "今天的装机单，要把颜值、稳定和涨价风险一起讲清。",
+  "insight": "Computex 后的成交逻辑很集中：电竞客户愿意为限定外观、OLED 与整机生态加预算，生产力客户更在意本地 AI、内存容量和高速存储。成本端内存与整机 ASP 上行仍是主线，销售报价要减少口头承诺，把电源、散热、扩展和交付测试写进方案。",
+  "methodNote": "本期面向 DIY 销售组装服务场景，采集窗口为 2026-06-01 至 2026-06-06，优先采用品牌官方、展会官方、公司新闻稿和权威机构资料；个别媒体现场报道用于补充机箱、电源和掌机细节，并标注来源日期。",
+  "homepage": {
+    "headline": "把展会新品翻译成成交理由",
+    "summary": "ROG、技嘉、华硕、Phison、TeamGroup、Seasonic 等新品都指向同一件事：配置单要同时回答体验、交付和风险。",
+    "mobileSections": [
+      { "name": "电竞玩家机会", "summary": "限定外观、OLED、整机生态可做加价锚点。" },
+      { "name": "生产力玩家机会", "summary": "本地 AI、内存容量和高速盘决定方案档位。" },
+      { "name": "配置与成本信号", "summary": "内存涨价、电源安全和机箱兼容要前置。" },
+      { "name": "销售话术与服务", "summary": "把展会参数改写成可执行的追问和承诺。" }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "ROG · OLED · ECOSYSTEM",
+      "items": [
+        {
+          "title": "ROG Edition 20 | 限定外观可溢价",
+          "description": "华硕 ROG 在 Computex 发布 Edition 20 阵容，覆盖硬件、系统和电竞装备。高端玩家单可先讲纪念款外观和套装感，再回到显卡、主板与屏幕预算。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/computex-2026-rog-edition-20/",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "GIGABYTE ENTER INFINITY | 用生态卖整机",
+          "description": "技嘉以 ENTER INFINITY 展示 AI、Gaming 与 PC 创新，覆盖主板、显卡、显示器和整机方案。门店可把单件比价转成同品牌生态搭配。",
+          "sourceName": "PR Newswire",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/gigabyte-opens-computex-2026-with-enter-infinity-where-ai-gaming-and-pc-innovation-unite-302788491.html",
+          "sourceDateLabel": "2026-06-02"
+        },
+        {
+          "title": "ROG Xbox Ally X20 | 掌机带动外设单",
+          "description": "华硕在 Computex 展示 ROG Xbox Ally X20 掌机，玩家关注性能和价格。销售可把掌机场景延伸到扩展坞、显示器、手柄和移动存储组合。",
+          "sourceName": "TechRadar",
+          "sourceUrl": "https://www.techradar.com/computing/gaming-pcs/the-perfect-handheld-for-many-asus-reveals-the-rog-xbox-ally-x20-and-handheld-fans-are-excited-about-everything-except-the-potential-price",
+          "sourceDateLabel": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "LOCAL AI · MEMORY · STORAGE",
+      "items": [
+        {
+          "title": "ASUS Hybrid AI | 本地推理可成单",
+          "description": "华硕把 Phison aiDAPTIV 接入商用设备，强调混合 AI 架构可降低推理成本。生产力客户要先问模型大小、隐私要求和是否需要本地部署。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-hybrid-ai-infrastructure-cost-reduction/",
+          "sourceDateLabel": "2026-05-25 · 邻近窗口"
+        },
+        {
+          "title": "Phison aiDAPTIV | SSD不只看容量",
+          "description": "Phison 的 Pascari aiDAPTIV AI PC 方案获 Computex Best Choice，强调用存储支撑本地 AI。AI 工作站报价应拆出系统盘、素材盘和缓存盘。",
+          "sourceName": "Phison Press Release",
+          "sourceUrl": "https://www.phison.com/en/category/article/press-releases/phison-s-pascari-aidaptiv-ai-pc-solution-wins-computex-best-choice-award",
+          "sourceDateLabel": "2026-05-21 · 邻近窗口"
+        },
+        {
+          "title": "TEAMGROUP 128GB CUDIMM | 工作站内存上探",
+          "description": "十铨展示 128GB 级 CUDIMM、DDR5 与 PCIe Gen5 SSD。剪辑、建模和本地 AI 客户不要只问 CPU，内存容量应先按项目规模报价。",
+          "sourceName": "TEAMGROUP News",
+          "sourceUrl": "https://www.teamgroupinc.com/cn/news-detail/computex-2026/",
+          "sourceDateLabel": "2026-05-28 · 邻近窗口"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "DRAM · ASP · POWER",
+      "items": [
+        {
+          "title": "TrendForce DRAM营收 | 内存涨价未结束",
+          "description": "TrendForce 称 1Q26 常规 DRAM 合约价约季增 93% 至 98%，推升行业营收。门店报价要缩短有效期，避免低价单拖成亏损单。",
+          "sourceName": "TrendForce Press Center",
+          "sourceUrl": "https://www.trendforce.com/presscenter/news/20260601-13070.html",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "IDC ASP预警 | 低价整机空间变窄",
+          "description": "IDC 指出内存短缺将推高 2026 年 PC 平均售价，价格难回 2025 水平。销售应把涨价解释为供应风险，而不是临时加价。",
+          "sourceName": "IDC Resource Center",
+          "sourceUrl": "https://www.idc.com/resource-center/blog/higher-asps-lower-unit-volumes-how-the-memory-crisis-is-reshaping-the-pc-and-smartphone-outlook/",
+          "sourceDateLabel": "2026-03-05 · 最近官方参考"
+        },
+        {
+          "title": "Seasonic Computex | 电源余量要前置",
+          "description": "Seasonic 预告 Computex 2026 将展示新电源平台和供电技术。高端显卡单要把 ATX 3.1、线材、功率余量和保修边界提前写清。",
+          "sourceName": "Seasonic",
+          "sourceUrl": "https://seasonic.com/news/seasonic-computex-2026/",
+          "sourceDateLabel": "2026-05-08 · 邻近窗口"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "QUESTIONS · BUILD QUALITY · AFTERSALES",
+      "items": [
+        {
+          "title": "Cooler Master GPU Shield | 电源追问要细",
+          "description": "Cooler Master 展示带 GPU Shield 的 MWE Gold V4，关注高功耗显卡线缆监测。成交前要问显卡型号、电源年限和是否换新线材。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/power-supplies/cooler-master-shows-off-new-mwe-gold-v4-power-supplies-and-gpu-shield-adapter-per-pin-monitoring-can-dynamically-scale-down-power-to-stop-cables-melting",
+          "sourceDateLabel": "2026-06-03"
+        },
+        {
+          "title": "LIAN LI Computex | 先确认桌面空间",
+          "description": "联力 Computex 页面集中展示新机箱和装机方案。海景房或大尺寸机箱成交前，要先问桌面尺寸、摆放方向、显卡长度和风道偏好。",
+          "sourceName": "LIAN LI",
+          "sourceUrl": "https://lian-li.com/ja/lian-li-2026-computex/",
+          "sourceDateLabel": "2026-05-16 · 邻近窗口"
+        },
+        {
+          "title": "Cooler Master HAF II | 静音也能成交",
+          "description": "媒体现场报道 Cooler Master HAF II 500 使用大尺寸风扇提升低噪 airflow。销售可把机箱话术从“好看”升级为温度、噪音和维护成本。",
+          "sourceName": "PC Gamer",
+          "sourceUrl": "https://www.pcgamer.com/hardware/pc-cases/cooler-master-is-stuffing-its-latest-cases-with-truly-humongous-fans-for-airflow-and-quieter-operation/",
+          "sourceDateLabel": "2026-06-03"
+        }
+      ]
+    }
+  ]
+}

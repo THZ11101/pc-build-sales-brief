@@ -15,9 +15,6 @@ on:
         options:
           - 'false'
           - 'true'
-  schedule:
-    # 08:30 Asia/Shanghai = 00:30 UTC
-    - cron: '30 0 * * *'
 
 permissions:
   contents: write

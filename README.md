@@ -13,7 +13,7 @@
 
 仓库已配置 GitHub Actions：
 
-- `Daily Brief`：每天 08:30（Asia/Shanghai）自动生成当天简报、渲染页面、生成分享图、提交发布并推送飞书。
+- `Daily Brief`：已暂停定时自动生成，避免在 OpenAI API 无额度时消耗调用；需要时可手动触发生成当天简报、渲染页面、生成分享图、提交发布并推送飞书。
 - `Send Feishu Brief`：手动重发指定日期的飞书卡片。
 
 需要的 Secrets：
