@@ -100,28 +100,49 @@ function buildPayload(imageKey) {
   };
 }
 
+function isNetworkBlocked(error) {
+  return error && (
+    error.code === 'EACCES' ||
+    /fetch failed/i.test(error.message || '') ||
+    /connect EACCES/i.test(String(error.cause || ''))
+  );
+}
+
 (async () => {
-  let imageKey = null;
   try {
-    imageKey = await uploadImage();
+    let imageKey = null;
+    try {
+      imageKey = await uploadImage();
+    } catch (error) {
+      if (isNetworkBlocked(error)) {
+        console.warn(`Image upload skipped because outbound network is blocked in this runner: ${error.message}`);
+      } else {
+        console.warn(`Image upload skipped: ${error.message}`);
+      }
+    }
+    const payload = buildPayload(imageKey);
+    const res = await fetch(webhook, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify(payload)
+    });
+    const text = await res.text();
+    if (!res.ok) {
+      console.error(`Feishu HTTP ${res.status}: ${text}`);
+      process.exit(1);
+    }
+    const result = JSON.parse(text);
+    if (result.code !== 0) {
+      console.error(`Feishu API error: ${text}`);
+      process.exit(1);
+    }
+    console.log(`Sent Feishu brief card for ${date}: ${briefUrl}${imageKey ? ' with image' : ' without image'}`);
   } catch (error) {
-    console.warn(`Image upload skipped: ${error.message}`);
-  }
-  const payload = buildPayload(imageKey);
-  const res = await fetch(webhook, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify(payload)
-  });
-  const text = await res.text();
-  if (!res.ok) {
-    console.error(`Feishu HTTP ${res.status}: ${text}`);
+    if (isNetworkBlocked(error)) {
+      console.error(`Feishu send blocked by outbound network restrictions in this runner: ${error.message}`);
+      process.exit(2);
+    }
+    console.error(error.stack || error.message);
     process.exit(1);
   }
-  const result = JSON.parse(text);
-  if (result.code !== 0) {
-    console.error(`Feishu API error: ${text}`);
-    process.exit(1);
-  }
-  console.log(`Sent Feishu brief card for ${date}: ${briefUrl}${imageKey ? ' with image' : ' without image'}`);
 })();

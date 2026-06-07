@@ -42,21 +42,38 @@ const payload = {
   },
 };
 
+function isNetworkBlocked(error) {
+  return error && (
+    error.code === 'EACCES' ||
+    /fetch failed/i.test(error.message || '') ||
+    /connect EACCES/i.test(String(error.cause || ''))
+  );
+}
+
 (async () => {
-  const res = await fetch(webhook, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify(payload),
-  });
-  const text = await res.text();
-  if (!res.ok) {
-    console.error(`Feishu HTTP ${res.status}: ${text}`);
+  try {
+    const res = await fetch(webhook, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify(payload),
+    });
+    const text = await res.text();
+    if (!res.ok) {
+      console.error(`Feishu HTTP ${res.status}: ${text}`);
+      process.exit(1);
+    }
+    const result = JSON.parse(text);
+    if (result.code !== 0) {
+      console.error(`Feishu API error: ${text}`);
+      process.exit(1);
+    }
+    console.log(`Sent local Feishu summary for ${date}`);
+  } catch (error) {
+    if (isNetworkBlocked(error)) {
+      console.error(`Feishu send blocked by outbound network restrictions in this runner: ${error.message}`);
+      process.exit(2);
+    }
+    console.error(error.stack || error.message);
     process.exit(1);
   }
-  const result = JSON.parse(text);
-  if (result.code !== 0) {
-    console.error(`Feishu API error: ${text}`);
-    process.exit(1);
-  }
-  console.log(`Sent local Feishu summary for ${date}`);
 })();

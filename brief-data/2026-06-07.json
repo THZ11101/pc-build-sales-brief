@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-07",
+  "weekday": "星期日",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "今天更适合卖有场景的配置，不是卖最低价参数单。",
+  "insight": "本周最容易成交的单子正在分化：电竞客户愿意为高刷外设、主题机箱和整洁走线付费，生产力客户愿意为本地 AI、统一内存和后续扩展买单。真正压利润的是内存与入门机报价，所以要缩短保价周期，并把供电、噪音和交付测试写进服务单。",
+  "methodNote": "本期面向 DIY 销售组装服务场景，主采集窗口为 2026-05-31 至 2026-06-07，优先采用品牌官方、权威机构与可信媒体现场报道；超出窗口的资料已在来源日期中标注“邻近窗口”或“最近官方参考”。",
+  "homepage": {
+    "headline": "场景化装机，比低价堆料更容易成交",
+    "summary": "高刷外设、主题机箱和本地 AI 继续拉高客单，真正要守的是内存涨价、供电保护和交付测试。",
+    "mobileSections": [
+      {
+        "name": "电竞玩家机会",
+        "summary": "高刷电竞与主题整机能做加价，不必只卷显卡。"
+      },
+      {
+        "name": "生产力玩家机会",
+        "summary": "本地 AI、统一内存和私有部署开始影响方案档位。"
+      },
+      {
+        "name": "配置与成本信号",
+        "summary": "DRAM 紧张延续，入门机利润和保价周期都在收缩。"
+      },
+      {
+        "name": "销售话术与服务",
+        "summary": "把电源、噪音、压力测试和后续维护写进交付承诺。"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "ESPORTS · STYLE · SHOWCASE",
+      "items": [
+        {
+          "title": "ROG Strix OLED Ace | 高刷整机可加价",
+          "description": "ROG 在 Computex 发布 24.5 英寸 540Hz OLED 电竞屏与 Ace 外设，并加入支架刻度和 Quick OSD。门店先问游戏、分辨率和刷新率，再把主机、屏幕与键鼠做整套报价。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-rog-computex-2026-ace-esports-gear-partnerships/",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "AORUS ARI B850 | 二次元板能提客单",
+          "description": "GIGABYTE 把 Wi-Fi 7、5GbE、四个 M.2 和 X3D Turbo Mode 装进动漫主题 B850 ATX 主板。面对侧透主机用户，颜值和规格能一起抬高客单。",
+          "sourceName": "GIGABYTE Global",
+          "sourceUrl": "https://www.gigabyte.com/press/news/2388",
+          "sourceDateLabel": "2026-05-15 · 邻近窗口"
+        },
+        {
+          "title": "CORSAIR WARTHOG | 主题机箱可溢价",
+          "description": "CORSAIR WARTHOG 把军规风格、双 200mm 风扇、GPU 防下垂和反向主板支持放进同一机箱。做主题整机或搬运型方案时，机箱本身就能成为加价理由。",
+          "sourceName": "CORSAIR",
+          "sourceUrl": "https://www.corsair.com/us/en/explorer/diy-builder/cases/corsair-warthog-everything-you-need-to-know/",
+          "sourceDateLabel": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "LOCAL AI · CREATORS · PRIVATE DEPLOY",
+      "items": [
+        {
+          "title": "ProArt P16/P14 | 本地AI工位成单",
+          "description": "ASUS 用 RTX Spark 推出 ProArt P16/P14，主打本地 AI、MuseTree 与 StoryCube 工作流，统一内存最高 128GB。做剪辑、设计和 AI 创作单时，可先按模型与素材规模定档。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-computex-2026-ai-pc-lineup-proart-rtx-spark-zenbook-vivobook/",
+          "sourceDateLabel": "2026-06-02"
+        },
+        {
+          "title": "IDC 本地推理观察 | 先问模型与显存",
+          "description": "IDC 认为 RTX Spark 与本地推理正把 PC 推向代理与离线推理场景。面对生产力客户，先问模型家族、上下文长度和是否离线处理，比直接堆显卡更容易成交。",
+          "sourceName": "IDC",
+          "sourceUrl": "https://www.idc.com/resource-center/blog/nvidia-and-microsoft-are-betting-the-future-of-the-pc-is-agents-and-local-inference/",
+          "sourceDateLabel": "2026-06-03"
+        },
+        {
+          "title": "TRUSTA AI Scaler | 私有AI预算可降",
+          "description": "TRUSTA AI Scaler 把模型部署从纯 GPU 扩展到 DRAM 与 SSD，并称推理或微调成本可降逾 50%。这给单卡工作站、私有知识库和小团队本地 AI 方案留下更大空间。",
+          "sourceName": "ADATA",
+          "sourceUrl": "https://www.adata.com/it/news/1311/",
+          "sourceDateLabel": "2026-05-28 · 邻近窗口"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "MEMORY · BOM · UPGRADE PATH",
+      "items": [
+        {
+          "title": "TrendForce DRAM | 内存紧张未松动",
+          "description": "TrendForce 指出自 2025 年下半年以来常规 DRAM 已持续涨价，HBM 还在进一步挤压产能。门店的 32GB、64GB 套餐要缩短保价周期，并提前解释为什么内存是今天最不稳的 BOM。",
+          "sourceName": "TrendForce",
+          "sourceUrl": "https://www.trendforce.com/presscenter/news/20260602-13074.html",
+          "sourceDateLabel": "2026-06-02"
+        },
+        {
+          "title": "Gartner 设备成本 | 入门机更难做",
+          "description": "Gartner 预计 2026 年 DRAM 与 SSD 合计涨幅可达 130%，并推高 PC 售价 17%。这意味着低价装机更难靠薄利走量，报价时要把配置余量和替代件方案一起准备。",
+          "sourceName": "Gartner",
+          "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2026-02-26-gartner-says-surging-memory-costs-will-reduce-global-pc-and-smartphone-shipments-in-2026",
+          "sourceDateLabel": "2026-02-26 · 最近官方参考"
+        },
+        {
+          "title": "D5 Single Boost | 单条内存先上车",
+          "description": "GIGABYTE D5 Single Boost 可在单条 Hynix M-Die DDR5 上自动调校到最高 8400 MT/s，并给出约 10% 游戏增益。预算受限的 Intel 平台单子，可以先上一条内存，把后补升级讲清楚。",
+          "sourceName": "GIGABYTE Global",
+          "sourceUrl": "https://www.gigabyte.com/press/news/2403",
+          "sourceDateLabel": "2026-05-29"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "POWER · THERMALS · DELIVERY",
+      "items": [
+        {
+          "title": "ROG Equalizer 线材 | 电源交付要写清",
+          "description": "ROG Equalizer 12V-2x6 线材主打 17A 峰值承载、低于 105℃ 的热安全余量和紫色插入识别。高功耗显卡交付时，电源、线材、插接确认和压力测试都该写进服务单。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/rog-equalizer-12v-2x6-pcie-cable-thor-iii-strix-platinum-psu/",
+          "sourceDateLabel": "2026-05-28"
+        },
+        {
+          "title": "HX1000i SHIFT CRYSTAL | 先讲供电保护",
+          "description": "CORSAIR HX1000i SHIFT CRYSTAL 把 PinProtect+、iCUE 监控和侧插线设计装进高瓦数电源。面对高端显卡客户，供电保护、线材整洁和软件可视化比单讲瓦数更能建立信任。",
+          "sourceName": "CORSAIR",
+          "sourceUrl": "https://www.corsair.com/eu/en/explorer/diy-builder/power-supply-units/corsair-hx1000i-shift-crystal-everything-you-need-to-know/",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "MSI Project Zero | 背插交付更省心",
+          "description": "MSI 在 Computex 组件汇总里继续强化 Project Zero 背插标准，并让机箱与主板围绕整洁走线配合。面对白色海景房和展示型整机单，干净内构与后续维护本身就是服务卖点。",
+          "sourceName": "MSI Blog",
+          "sourceUrl": "https://us.msi.com/blog/msi-computex-2026-pc-component-lineup-best-new-motherboards-coolers-casas-and-psus",
+          "sourceDateLabel": "2026-06-01"
+        }
+      ]
+    }
+  ]
+}
