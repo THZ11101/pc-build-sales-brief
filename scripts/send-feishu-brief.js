@@ -108,11 +108,54 @@ function isNetworkBlocked(error) {
   );
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function withRetries(label, fn, attempts = 3) {
+  let lastError;
+  for (let i = 1; i <= attempts; i += 1) {
+    try {
+      return await fn();
+    } catch (error) {
+      lastError = error;
+      if (i < attempts) {
+        console.warn(`${label} failed on attempt ${i}/${attempts}: ${error.message}`);
+        await sleep(1500 * i);
+      }
+    }
+  }
+  throw lastError;
+}
+
+async function postWebhook(payload) {
+  const res = await fetch(webhook, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify(payload)
+  });
+  const text = await res.text();
+  if (!res.ok) {
+    throw new Error(`Feishu HTTP ${res.status}: ${text}`);
+  }
+  const result = JSON.parse(text);
+  if (result.code !== 0) {
+    throw new Error(`Feishu API error: ${text}`);
+  }
+}
+
+async function sendImageOnly(imageKey) {
+  await postWebhook({
+    msg_type: 'image',
+    content: { image_key: imageKey },
+  });
+}
+
 (async () => {
   try {
     let imageKey = null;
     try {
-      imageKey = await uploadImage();
+      imageKey = await withRetries('Feishu image upload', uploadImage, 3);
     } catch (error) {
       if (isNetworkBlocked(error)) {
         console.warn(`Image upload skipped because outbound network is blocked in this runner: ${error.message}`);
@@ -121,22 +164,29 @@ function isNetworkBlocked(error) {
       }
     }
     const payload = buildPayload(imageKey);
-    const res = await fetch(webhook, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify(payload)
-    });
-    const text = await res.text();
-    if (!res.ok) {
-      console.error(`Feishu HTTP ${res.status}: ${text}`);
-      process.exit(1);
+    await withRetries('Feishu webhook send', () => postWebhook(payload), 3);
+
+    let imageFallbackSent = false;
+    const fallbackMode = process.env.FEISHU_IMAGE_FALLBACK_MODE || 'always';
+    if (imageKey && fallbackMode === 'always') {
+      await withRetries('Feishu image-only fallback send', () => sendImageOnly(imageKey), 2);
+      imageFallbackSent = true;
+    } else if (!imageKey) {
+      try {
+        const retryImageKey = await withRetries('Feishu fallback image upload', uploadImage, 2);
+        if (retryImageKey) {
+          await withRetries('Feishu image-only fallback send', () => sendImageOnly(retryImageKey), 2);
+          imageFallbackSent = true;
+        }
+      } catch (error) {
+        console.warn(`Image-only fallback skipped: ${error.message}`);
+      }
     }
-    const result = JSON.parse(text);
-    if (result.code !== 0) {
-      console.error(`Feishu API error: ${text}`);
-      process.exit(1);
-    }
-    console.log(`Sent Feishu brief card for ${date}: ${briefUrl}${imageKey ? ' with image' : ' without image'}`);
+
+    const imageStatus = imageKey
+      ? (imageFallbackSent ? ' with image; image-only fallback sent' : ' with image')
+      : (imageFallbackSent ? ' without image; image-only fallback sent' : ' without image');
+    console.log(`Sent Feishu brief card for ${date}: ${briefUrl}${imageStatus}`);
   } catch (error) {
     if (isNetworkBlocked(error)) {
       console.error(`Feishu send blocked by outbound network restrictions in this runner: ${error.message}`);
