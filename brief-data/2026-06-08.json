@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-08",
+  "weekday": "星期一",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "今天更好卖的是会讲场景的整机，不是最低价散件。",
+  "insight": "今天的机会很清楚：电竞单靠屏与机箱抬价，生产力单靠本地 AI 与创作工作流提档，利润则靠提前讲清内存、供电和交付细节来守住。",
+  "methodNote": "本期面向 DIY 销售组装服务，主采集窗口为 2026-06-01 至 2026-06-08，优先采用品牌官方、权威机构与可信媒体现场报道；窗口外来源已标注“邻近窗口”或“最近官方参考”。",
+  "homepage": {
+    "headline": "今天更容易成交的是会讲场景的整机",
+    "summary": "高刷三模屏、小体积高性能、本地 AI 工作站和电源分档一起推高客单；真正要守住的是内存涨价背景下的保价、供电和交付承诺。",
+    "mobileSections": [
+      {
+        "name": "电竞玩家机会",
+        "summary": "高刷三模屏和紧凑高性能机箱，都能把游戏单做厚。"
+      },
+      {
+        "name": "生产力玩家机会",
+        "summary": "本地 AI 与创作主板，让工作站单从配件走向方案。"
+      },
+      {
+        "name": "配置与成本信号",
+        "summary": "内存紧张仍在持续，预算机更要预留升级与保价空间。"
+      },
+      {
+        "name": "销售话术与服务",
+        "summary": "把装机流程、供电余量和散热交付写清，比卷低价更有效。"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "ESPORTS · MONITORS · SHOWCASE",
+      "items": [
+        {
+          "title": "ROG Strix OLED XG259QWPG Ace | 高刷电竞单能抬价",
+          "description": "ASUS 6 月 1 日发布这款 24.5 英寸 540Hz OLED 电竞屏，并强化 Neo Proximity 与快速 OSD。门店面对 FPS 玩家时，可把主机、屏幕和桌面摆位一起卖成高客单方案。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-rog-computex-2026-new-displays-oled-proart-zenscreen/",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "MSI MPG OLED 322URDX36 | 一台屏吃下三类玩家",
+          "description": "MSI 在 Computex 预告这款 31.5 英寸三模 QD-OLED，可在 4K 360Hz、1440p 520Hz 和 1080p 680Hz 间切换。对既玩 3A 又打竞技的客户，一台高端屏就能带动整机升级。",
+          "sourceName": "MSI Blog",
+          "sourceUrl": "https://www.msi.com/blog/msi-computex-2026-ai-gaming-desktops-qd-oled-monitors-and-pro-max-series",
+          "sourceDateLabel": "2026-06-01"
+        },
+        {
+          "title": "CORSAIR 2800X | 小桌面整机更好卖",
+          "description": "CORSAIR 6 月 1 日更新 2800X 规格，mATX 机箱可塞 410mm 显卡、10 把 120mm 风扇和 360 冷排，还兼容背插主板。对宿舍、出租屋和直播角客户，小体积高性能单更容易成交。",
+          "sourceName": "CORSAIR",
+          "sourceUrl": "https://www.corsair.com/us/en/explorer/diy-builder/cases/corsair-2800x-everything-you-need-to-know/",
+          "sourceDateLabel": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "LOCAL AI · CREATORS · WORKSTATIONS",
+      "items": [
+        {
+          "title": "Phison aiDAPTIV | 本地大模型门槛下探",
+          "description": "Phison 与 Intel 6 月 2 日披露，aiDAPTIV 可把 26B 模型从原本需 32GB DRAM 压到 16GB DRAM 环境运行。做本地知识库、文档分析和代理型工作流的客户，更容易被中高配 AI PC 说服。",
+          "sourceName": "PHISON",
+          "sourceUrl": "https://www.phison.com/en/category/article/press-releases/phison-collaborates-with-intel-to-bring-larger-local-ai-workloads-to-intel-ai-pc-platforms",
+          "sourceDateLabel": "2026-06-02"
+        },
+        {
+          "title": "CORSAIR PRO FlexPrime | 桌边AI工位可成单",
+          "description": "CORSAIR 5 月 21 日发布 CORSAIR PRO，把 AI 工作站和服务器拆成从本地开发到部署的完整产品族。对设计、研发和私有化 AI 团队，门店可以先卖桌边工作站，再留后续扩容服务空间。",
+          "sourceName": "CORSAIR Newsroom",
+          "sourceUrl": "https://www.corsair.com/newsroom/press-release/corsair-pro-launches-ai-workstations-and-servers-complete-ai-compute-stack-built-for-every-scale",
+          "sourceDateLabel": "2026-05-21 · 最近官方参考"
+        },
+        {
+          "title": "ProArt B850-Creator WiFi Neo | 创作站方案更顺手",
+          "description": "ASUS 6 月 2 日把 ProArt B850-Creator WiFi Neo 定位为 AI 辅助创作主板，给出双 5G 网口、WiFi 7、多 M.2 和 AI 调校。面对视频剪辑、设计和内容团队，卖主板加本地工作流比只堆显卡更顺。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-computex-2026-enterprise-to-edge-ai/",
+          "sourceDateLabel": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "MARGIN · BOM · UPGRADE PATH",
+      "items": [
+        {
+          "title": "TrendForce Agentic AI | 内存缺口继续放大",
+          "description": "TrendForce 5 月 29 日指出，Agentic AI 推动推理循环、KV cache 和 CPU 配比上移，同时 HBM 挤压常规 DRAM 产能，供应缺口短期难解。门店要默认内存仍会涨，预算单别把保价拖太长。",
+          "sourceName": "TrendForce",
+          "sourceUrl": "https://www.trendforce.com/presscenter/news/20260529-13068.html",
+          "sourceDateLabel": "2026-05-29 · 邻近窗口"
+        },
+        {
+          "title": "ASRock H610M COMBO II | 预算单先留升级口",
+          "description": "ASRock 5 月 29 日展示 H610M COMBO II，可按预算或供货在 DDR4 与 DDR5 间灵活选择，并强调多种更省成本的 DRAM 组合。做学生机和办公机时，先留升级口比一次性堆满更容易守利润。",
+          "sourceName": "ASRock",
+          "sourceUrl": "https://asrock.com/news/index.asp?iD=5811",
+          "sourceDateLabel": "2026-05-29 · 邻近窗口"
+        },
+        {
+          "title": "CORSAIR PSU Lineup | 电源先按档位讲清",
+          "description": "CORSAIR 5 月 11 日更新 2026 电源阵列，把 CX-M 到 HXi SHIFT 的瓦数、模组化和 12V-2x6 适配讲得很清楚。门店报价时先按显卡档位和机箱空间配电源，比临时补差价更能稳住毛利与交付。",
+          "sourceName": "CORSAIR",
+          "sourceUrl": "https://www.corsair.com/us/en/explorer/diy-builder/power-supply-units/explaining-the-corsair-psu-lineup/",
+          "sourceDateLabel": "2026-05-11 · 最近官方参考"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "TRUST · DELIVERY · SERVICE",
+      "items": [
+        {
+          "title": "ROG Lab PC DIY Event | 现场装机更能建立信任",
+          "description": "ROG 6 月 2 日把 Onsite PC DIY Event 放进展区，用 BTF 生态和 AIO Q-Connector 展示更快、更干净的装机流程。门店交付时把走线、接线和可维护性讲透，比只讲参数更容易让客户放心下单。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-rog-computex-2026-20th-anniversary-edition-20/",
+          "sourceDateLabel": "2026-06-02"
+        },
+        {
+          "title": "TITAN II ULTRA 360 LX LCD | 冷排交付更省心",
+          "description": "CORSAIR 6 月 3 日更新 TITAN II ULTRA，强调双层 cross-flow 冷排、FlowDrive 2 泵、统一风扇框架和预涂 XTM100。对高端平台交付，安装更快、线材更少、复现更稳定，正好能写进服务承诺。",
+          "sourceName": "CORSAIR",
+          "sourceUrl": "https://www.corsair.com/ca/en/explorer/diy-builder/cpu-coolers/icue-link-titan-ii-ultra-360-lx-lcd-aio-everything-you-need-to-know/",
+          "sourceDateLabel": "2026-06-03"
+        },
+        {
+          "title": "Build Your World 展示 | 整套方案更好卖",
+          "description": "CORSAIR 6 月 2 日在 Computex 把机箱、电源、散热、外设和 AI 工作站放进一套统一展示，并明确强调 integrated experiences。门店也应少卖孤立单件，多把桌搭、性能和后续升级打成整套方案。",
+          "sourceName": "CORSAIR IR",
+          "sourceUrl": "https://ir.corsair.com/node/11261/pdf",
+          "sourceDateLabel": "2026-06-02"
+        }
+      ]
+    }
+  ]
+}
