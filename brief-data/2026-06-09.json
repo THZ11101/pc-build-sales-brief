@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-09",
+  "weekday": "星期二",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "今天更容易成交的，不是最卷参数，而是把场景、升级和交付一次讲透的整套方案。",
+  "insight": "今天的机会很集中：电竞单靠屏幕与桌搭抬客单，生产力单靠本地 AI 与高容量内存拉预算，真正决定毛利的则是能不能提前把供电、安全、维护和升级口讲明白。谁先把方案讲完整，谁就更容易守住利润。",
+  "methodNote": "本期面向 DIY 销售组装服务，采集窗口为 2026-06-02 至 2026-06-09，优先采用品牌官方、权威机构与品牌发布渠道；窗口外资料已标注“邻近窗口”或“最近官方参考”，并避开历史简报重复标题与来源 URL。",
+  "homepage": {
+    "headline": "把高刷、AI 与交付讲成整套方案",
+    "summary": "电竞桌搭、本地 AI 工位、高容量内存与交付安全一起抬升客单；真正该提前说清的，是升级口、供电保护和后续维护。",
+    "mobileSections": [
+      {
+        "name": "电竞玩家机会",
+        "summary": "高刷 OLED、电竞桌搭和外设联动，仍然是最容易抬客单的一档。"
+      },
+      {
+        "name": "生产力玩家机会",
+        "summary": "本地 AI、创作工作流和桌边工作站，让生产力单更像方案单。"
+      },
+      {
+        "name": "配置与成本信号",
+        "summary": "DDR5 门槛、工作站内存容量和 DDR4 现货波动，都在影响今天的报价节奏。"
+      },
+      {
+        "name": "销售话术与服务",
+        "summary": "供电安全、快拆维护和线材交付，比单纯卷硬件参数更能建立信任。"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "ESPORTS · OLED · DESK SETUPS",
+      "items": [
+        {
+          "title": "ROG G1000 Edition 20 | 金奖整机更好讲",
+          "description": "ASUS 6 月 1 日公布 Computex Best Choice Awards，ROG G1000 Edition 20 拿下 Gaming & Immersive Tech 金奖。对高端电竞客户，限量外观、420 冷排和整机获奖背书，能让高客单方案更容易讲顺。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-rog-computex-2026-best-choice-awards/",
+          "sourceDateLabel": "2026-06-01 · 邻近窗口"
+        },
+        {
+          "title": "MSI MPG OLED 322URDX36 | 一屏覆盖三档玩法",
+          "description": "MSI 5 月 29 日发布 31.5 英寸 QD-OLED 屏，支持 4K 360Hz、2K 520Hz 与 FHD 680Hz 三模式切换，并加入 AI Care Sensor。面对既玩 3A 又打竞技的客户，一台屏就能带动整机升档。",
+          "sourceName": "MSI",
+          "sourceUrl": "https://www.msi.com/news/detail/The-World-s-First-Triple-Mode-QD-OLED-Gaming-Monitor--MPG-OLED-322URDX36-31-5-Inch-4K-360Hz-Debuts-at-COMPUTEX-2026-148961",
+          "sourceDateLabel": "2026-05-29 · 邻近窗口"
+        },
+        {
+          "title": "AORUS K10 INFINITY | 外设也能抬客单",
+          "description": "GIGABYTE 6 月 2 日发布 K10 INFINITY 键盘与 M10 INFINITY 鼠标，并用 GiMATE Web Edition 实现免驱控制与监测。卖电竞整套机时把键鼠、灯效和桌面监控一起讲，更容易把周边利润留在单内。",
+          "sourceName": "PR Newswire / GIGABYTE",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/gigabyte-unveils-next-generation-gaming-peripherals-with-aorus-k10-infinity-keyboard-and-m10-infinity-mouse-at-computex-2026-302786993.html",
+          "sourceDateLabel": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "LOCAL AI · CREATORS · WORKSTATIONS",
+      "items": [
+        {
+          "title": "ProArt RTX Spark | 创作工位一步到位",
+          "description": "ASUS 6 月 1 日发布 ProArt P16、P14 与 Mini PC，RTX Spark 可本地跑 120B 参数模型、12K 剪辑与 4K AI 视频。对设计、视频和私有 AI 客户，卖的是整套工位而不只是显卡。",
+          "sourceName": "ASUS Pressroom",
+          "sourceUrl": "https://press.asus.com/news/press-releases/asus-proart-p16-p14-mini-pc-nvidia-rtx-spark-computex-2026",
+          "sourceDateLabel": "2026-06-01 · 邻近窗口"
+        },
+        {
+          "title": "MSI XpertStation WS300 | 桌边AI站更好讲",
+          "description": "MSI 6 月 3 日把 XpertStation WS300 与 DGX Station 架构带到 Computex，主打 deskside AI development。给企业研发、视频团队和实验室报价时，桌边 AI 站比传统塔式主机更容易解释投入产出。",
+          "sourceName": "MSI",
+          "sourceUrl": "https://www.msi.com/news/detail/MSI-Brings-Liquid-Cooled-NVIDIA-MGX-and-NVIDIA-DGX-Station-to-COMPUTEX-2026-148807",
+          "sourceDateLabel": "2026-06-03"
+        },
+        {
+          "title": "GIGABYTE AI TOP 100 B850 | 团队私有AI更易卖",
+          "description": "GIGABYTE 6 月 2 日扩展 AI TOP 生态，AI TOP 100 B850 可配 Ryzen 9 9950X、RTX 5090 或 Radeon AI PRO R9700。对想本地部署智能体和知识库的团队，门店能直接卖“可落地私有 AI”方案。",
+          "sourceName": "PR Newswire / GIGABYTE",
+          "sourceUrl": "https://www.prnewswire.co.uk/news-releases/gigabyte-expands-its-ai-top-ecosystem-for-the-next-era-of-ai-agents-302786488.html",
+          "sourceDateLabel": "2026-06-02"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "MEMORY · PLATFORM · BUDGET",
+      "items": [
+        {
+          "title": "GIGABYTE HUDIMM DDR5 | 先把DDR5门槛压下",
+          "description": "GIGABYTE 4 月 30 日宣布 Intel 800/700/600 系列全面支持 HUDIMM，一子通道 DDR5 让模组价格更低。内存仍贵的阶段，先把 DDR5 入门门槛讲低，比硬推满配更容易成交预算单。",
+          "sourceName": "GIGABYTE",
+          "sourceUrl": "https://www.gigabyte.com/eu/Press/News/2384",
+          "sourceDateLabel": "2026-04-30 · 最近官方参考"
+        },
+        {
+          "title": "GIGABYTE CQDIMM | 256GB高频一起卖",
+          "description": "GIGABYTE 6 月 3 日展示 CQDIMM 平台，双条 128GB 可做到 256GB 容量并跑到 10400MT/s。对 AI 训练、内容创作和多工工作站客户，容量与频率不必二选一，报价时更容易一步到位。",
+          "sourceName": "PR Newswire / GIGABYTE",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/gigabyte-showcases-industry-leading-cqdimm-performance-and-ecosystem-expansion-at-computex-2026-302783223.html",
+          "sourceDateLabel": "2026-06-03"
+        },
+        {
+          "title": "TrendForce DDR4现货 | 预算单别晚报",
+          "description": "TrendForce 5 月 13 日指出 DDR4 512×16 与 1Gx16 现货需求转强，卖方报价上调。还在做 DDR4 预算机的门店，不宜把保价周期拖太长，最好提前说明替代料号和升级口。",
+          "sourceName": "TrendForce",
+          "sourceUrl": "https://www.trendforce.com/news/2026/05/13/insights-memory-spot-price-update-dram-spot-market-strengthens-post-holiday-as-ddr4-leads-demand/",
+          "sourceDateLabel": "2026-05-13 · 最近官方参考"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "TRUST · BUILD · DELIVERY",
+      "items": [
+        {
+          "title": "Project STEALTH | 颜值与兼容一起讲",
+          "description": "GIGABYTE 6 月 5 日展示 STEALTH 与 WOOD 整机，并与 10 多家机箱伙伴扩展无明线兼容。报价时把走线整洁、兼容机箱和后续维护一起讲，能把“好看”变成可交付的服务价值。",
+          "sourceName": "PR Newswire / GIGABYTE",
+          "sourceUrl": "https://www.prnewswire.co.uk/news-releases/gigabyte-showcases-sleek-stealth-and-elegant-wood-pc-builds-at-computex-2026-302792446.html",
+          "sourceDateLabel": "2026-06-05"
+        },
+        {
+          "title": "LT360 VISION ARGB | 展示机更好交付",
+          "description": "DeepCool 3 月 31 日发布 LT360 VISION ARGB，4.5 英寸可调 IPS 屏、D-Cast 扩展显示和防漏液设计一起到位。做展示型整机时，把监控屏玩法、稳定性和五年保修提前讲清，更利于成交与交付。",
+          "sourceName": "DeepCool",
+          "sourceUrl": "https://www.deepcool.com/company/pressroom/newsrelease/2026/22984.shtml",
+          "sourceDateLabel": "2026-03-31 · 最近官方参考"
+        },
+        {
+          "title": "GIGABYTE T-Guard PSU | 供电安全写进服务",
+          "description": "GIGABYTE 4 月 16 日发布 GAMING 电源，T-Guard 会实时监测 12V-2x6 温度并在异常时先保护 GPU。面对高端显卡订单，把插头温控、双色线材和 10 年保修讲明白，比单说瓦数更能建立信任。",
+          "sourceName": "GIGABYTE",
+          "sourceUrl": "https://www.gigabyte.com/us/Press/News/2380",
+          "sourceDateLabel": "2026-04-16 · 最近官方参考"
+        }
+      ]
+    }
+  ]
+}
