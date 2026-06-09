@@ -167,7 +167,7 @@ async function sendImageOnly(imageKey) {
     await withRetries('Feishu webhook send', () => postWebhook(payload), 3);
 
     let imageFallbackSent = false;
-    const fallbackMode = process.env.FEISHU_IMAGE_FALLBACK_MODE || 'always';
+    const fallbackMode = process.env.FEISHU_IMAGE_FALLBACK_MODE || 'missing-image';
     if (imageKey && fallbackMode === 'always') {
       await withRetries('Feishu image-only fallback send', () => sendImageOnly(imageKey), 2);
       imageFallbackSent = true;
