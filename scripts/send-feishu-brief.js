@@ -151,6 +151,13 @@ async function sendImageOnly(imageKey) {
   });
 }
 
+function resolveImageFallbackMode() {
+  const mode = (process.env.FEISHU_IMAGE_FALLBACK_MODE || 'missing-image').trim().toLowerCase();
+  if (mode === 'never' || mode === 'missing-image') return mode;
+  console.warn(`Unsupported FEISHU_IMAGE_FALLBACK_MODE="${mode}", falling back to "missing-image".`);
+  return 'missing-image';
+}
+
 (async () => {
   try {
     let imageKey = null;
@@ -167,11 +174,8 @@ async function sendImageOnly(imageKey) {
     await withRetries('Feishu webhook send', () => postWebhook(payload), 3);
 
     let imageFallbackSent = false;
-    const fallbackMode = process.env.FEISHU_IMAGE_FALLBACK_MODE || 'missing-image';
-    if (imageKey && fallbackMode === 'always') {
-      await withRetries('Feishu image-only fallback send', () => sendImageOnly(imageKey), 2);
-      imageFallbackSent = true;
-    } else if (!imageKey) {
+    const fallbackMode = resolveImageFallbackMode();
+    if (!imageKey && fallbackMode === 'missing-image') {
       try {
         const retryImageKey = await withRetries('Feishu fallback image upload', uploadImage, 2);
         if (retryImageKey) {
