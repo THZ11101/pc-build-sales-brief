@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-12",
+  "weekday": "星期五",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "今天最值钱的不是再堆参数，而是把用途、升级口和交付风险一次讲明白。",
+  "insight": "今天的机会分成两条线：前台靠高刷屏、收藏外设和主题整机抓眼球，后台靠桌边 AI、小体积工位与安全存储抬客单。真正决定成交效率的，是能否把内存涨价、接口代差和后续维护提前说透，让客户相信这台机器现在能用、后面也好管。",
+  "methodNote": "本期面向 DIY 销售组装服务，采集窗口为 2026-06-05 至 2026-06-12，优先采用品牌新闻、权威机构资料与可信媒体现场报道；窗口外资料已标注“邻近窗口”，并避开历史标题与 sourceUrl 重复。",
+  "homepage": {
+    "headline": "把高刷、桌边 AI 和交付风险讲成整套方案",
+    "summary": "高刷显示、主题整机和收藏外设继续拉新，桌边 AI 工位与安全存储负责抬客单；真正该提前说明的，是内存涨价、接口代差和后续维护。",
+    "mobileSections": [
+      {
+        "name": "电竞玩家机会",
+        "summary": "高刷屏、收藏级外设和主题整机，仍然是最容易先把人留下来的三种开场。"
+      },
+      {
+        "name": "生产力玩家机会",
+        "summary": "桌边 AI、大内存迷你主机和企业级工作站，让生产力单更像方案单。"
+      },
+      {
+        "name": "配置与成本信号",
+        "summary": "内存紧张、PCIe 6.0 先于主板落地，报价节奏和平台说明都要更谨慎。"
+      },
+      {
+        "name": "销售话术与服务",
+        "summary": "理线、清洁、静音和数据安全这些可交付细节，正在替代单纯卷参数。"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "ESPORTS · DISPLAYS · SHOW BUILDS",
+      "items": [
+        {
+          "title": "AORUS ELITE 5K Multi Mode | 一屏承接高刷高分",
+          "description": "Times of India 6 月 5 日报道，AORUS ELITE 系列 27 英寸屏可在 5K 165Hz、4K 220Hz 与 QHD 330Hz 间切换。面对既打竞技又玩 3A 的客户，一台屏就能把整机档位和显卡预算一起讲顺。",
+          "sourceName": "Times of India",
+          "sourceUrl": "https://timesofindia.indiatimes.com/technology/laptops-pc/gigabyte-showcases-ai-gaming-and-other-computing-innovation-at-computex-2026/articleshow/131534226.cms",
+          "sourceDateLabel": "2026-06-05"
+        },
+        {
+          "title": "ROG Harpe II Extreme Edition 20 | 收藏外设也能抬单",
+          "description": "Tom's Hardware 6 月 2 日上手称，这款 ROG 20 周年鼠标给到 65K 传感器、8K 回报率和 24K 镀金细节。对高端电竞客群，外设不只是补件，更能把“收藏感”和主机溢价一起做出来。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/peripherals/gaming-mice/hands-on-with-asus-rog-harpe-ii-extreme-edition-20-gaming-mouse-24k-gold-and-a-65k-sensor",
+          "sourceDateLabel": "2026-06-02 · 邻近窗口"
+        },
+        {
+          "title": "TechLin Gachapon Custom PC | 主题整机先拉人流",
+          "description": "PC Gamer 6 月 5 日报道，TechLin 把 Thermaltake Tower 600 做成扭蛋机整机，内置 RTX 5060、Ryzen 5 9600X 和定制水冷。门店展厅如果有一台能拍照传播的主题机，更容易把客流带进高毛利整机单。",
+          "sourceName": "PC Gamer",
+          "sourceUrl": "https://www.pcgamer.com/hardware/gaming-pcs/check-out-this-gachapon-inspired-custom-pc-with-a-floating-heart-on-top-and-mini-ram-sticks-in-its-capsules/",
+          "sourceDateLabel": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "LOCAL AI · CREATOR DESKS · WORKSTATIONS",
+      "items": [
+        {
+          "title": "HP ZGX Fury GB300 | 高端AI工位能讲项目单",
+          "description": "TechRadar Pro 6 月 6 日称，HP 的 ZGX Fury GB300 可做本地万亿参数推理，最高给到 784GB 统一内存与 20 PFLOPS FP4 算力。面向企业和团队客户时，卖点已不是单卡，而是能直接落地的桌边 AI 节点。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/hp-announces-the-most-powerful-windows-ai-pc-ever-built-nvidia-gb300-workstation-can-handle-one-trillion-parameters-thanks-to-its-784gb-unified-memory-but-it-wont-be-cheap",
+          "sourceDateLabel": "2026-06-06"
+        },
+        {
+          "title": "Dell XPS RTX Spark Desktop | 小体积AI桌面更好卖",
+          "description": "TechRadar 6 月 8 日提到，Dell 的 XPS RTX Spark Desktop 采用 N1X 方案，最高可配 128GB 内存，目标就是本地 AI 和专业应用。对想要安静、占地小又能跑本地模型的客户，小机身比传统塔式更容易成交。",
+          "sourceName": "TechRadar",
+          "sourceUrl": "https://www.techradar.com/computing/dells-new-nvidia-rtx-spark-mini-pc-has-distinct-mac-studio-vibes-and-i-think-it-could-tempt-buyers-away-from-apple-given-all-its-mac-stock-woes",
+          "sourceDateLabel": "2026-06-08"
+        },
+        {
+          "title": "Asus Ascent QN10 | 迷你AI主机适合桌边工位",
+          "description": "Times of India 6 月 5 日称，Ascent QN10 把 80 TOPS NPU、18 核 CPU 和四路 4K 输出塞进 0.7 升机身。对设计、文档流和数字标牌客户，这类迷你 AI 主机天然适合打“桌边工位一步到位”的方案牌。",
+          "sourceName": "Times of India",
+          "sourceUrl": "https://timesofindia.indiatimes.com/technology/laptops-pc/asus-ascent-qn10-is-the-worlds-first-mini-pc-with-an-80-tops-npu-powered-by-qualcomms-snapdragon-x2-elite/articleshow/131531948.cms",
+          "sourceDateLabel": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "MEMORY · PLATFORM GAP · PRICING",
+      "items": [
+        {
+          "title": "行业协会内存预警 | 报价窗口别拖太久",
+          "description": "Tom's Hardware 6 月 6 日援引九家美国产业协会联名信称，AI 数据中心正大量挤占内存供应，并可能继续推高非 AI 产业的 DRAM 与 NAND 成本。门店给整机报价时，不宜把保价周期拖得过长。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/industry-coalition-urges-trump-administration-to-take-urgent-action-as-ai-data-centers-extreme-memory-consumption-threatens-other-industries-ai-driven-memory-chip-shortage-could-raise-prices-in-automotive-medical-telecommunications-sectors",
+          "sourceDateLabel": "2026-06-06"
+        },
+        {
+          "title": "Lexar RAM 预警 | 内存报价要缩短时效",
+          "description": "Tom's Hardware 6 月 6 日引述 Lexar 区域负责人判断，RAM 价格到 2026 年底可能翻倍，当前折扣多半只是清旧货。预算单如果还在观望，门店最好尽早把内存替代方案和加价预期提前说明。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/ram/lexar-regional-manager-says-that-ram-prices-are-expected-to-double-by-the-end-of-the-year-discounts-and-stabilized-prices-result-from-distributors-getting-rid-of-old-stock-or-sourcing-products-from-other-regions",
+          "sourceDateLabel": "2026-06-06"
+        },
+        {
+          "title": "TEAMGROUP PCIe 6.0 SSD | 新接口别提前卖穿",
+          "description": "TechRadar Pro 6 月 7 日报道，TEAMGROUP 展出顺序读取 28GB/s 的 PCIe 6.0 E1.S SSD，但主流消费级主板暂时还接不住。给高端客户做方案时，要把“企业级前沿”与“当前可装平台”分开讲，避免卖穿预期。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/teamgroup-just-launched-a-pcie-6-0-ssd-that-reaches-28gb-s-but-you-definitely-wont-be-able-to-use-it-on-your-desktop-pc",
+          "sourceDateLabel": "2026-06-07"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "DELIVERY · MAINTENANCE · TRUST",
+      "items": [
+        {
+          "title": "FormulaV Air Power G10 / Crystal Z3 | 快拆清洁也能当卖点",
+          "description": "Tom's Hardware 6 月 6 日现场提到，Air Power G10 用可调倾角前风扇定向送风，Crystal Z3 则把底部风扇做成易拆结构方便清洁。装机交付时，把风道可解释和后续维护省事讲清楚，比单说机箱颜值更容易建立信任。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/pc-cases/taiwanese-startup-formulav-line-wants-to-break-into-us-market-with-two-new-unique-cases-company-expects-products-to-become-available-on-newegg-later-this-year",
+          "sourceDateLabel": "2026-06-06"
+        },
+        {
+          "title": "TEAMGROUP P35SG | 安全存储能做企业加购",
+          "description": "TechRadar Pro 6 月 8 日称，TEAMGROUP 的 P35SG 外置 SSD 集成 4G LTE，可远程触发深度逻辑擦除和硬件级销毁。对律所、设计团队和差旅客户，数据安全已经是可以单独收费的服务型加购点。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/fit-for-james-bond-this-extraordinary-ssd-has-a-built-in-4g-modem-that-enables-wireless-remote-destruction",
+          "sourceDateLabel": "2026-06-08"
+        },
+        {
+          "title": "HYTE Y50 | 背插理线交付更省心",
+          "description": "Tom's Hardware 6 月 4 日报道，HYTE Y50 支持 EATX 与背插主板，还配套同色线材套件和新风扇方案。面对重视桌面整洁的客户，直接把理线效果、换件便利和交付观感打包成服务，会比单讲玻璃侧透更有说服力。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/pc-cases/hyte-shows-off-y50-chassis-aesthetic-cable-accessory-kit-new-fans-and-updates-nexus-software-sub-usd100-y50-brings-value-to-y-series-nexus-3-0-goes-web-based-now-works-on-mac-linux-windows-and-your-phone",
+          "sourceDateLabel": "2026-06-04 · 邻近窗口"
+        }
+      ]
+    }
+  ]
+}
