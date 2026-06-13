@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-13",
+  "weekday": "星期六",
+  "industry": "电脑DIY销售组装服务",
+  "publicTitle": "The PC Build Sales Brief",
+  "chineseTitle": "每日装机销售简报",
+  "opening": "今天更容易成交的，是能把性能、扩展和后续托管一起讲明白的整套机器。",
+  "insight": "今天的机会分成三层：前台靠 500Hz 屏和带屏机箱吸睛，中台靠桌边 AI 与 10GbE 私有云抬预算，后台则要把 NAND 锁价、DDR4 回潮和备份安全讲成风险管理。谁先把买回去怎么用、怎么扩、怎么保说透，谁更容易把利润留住。",
+  "methodNote": "本期面向 DIY 销售组装服务，采集窗口为 2026-06-06 至 2026-06-13，优先采用品牌发布、权威媒体评测与可信现场报道；超出窗口的资料已标注“邻近窗口”，并避开历史简报标题与 sourceUrl 重复。",
+  "homepage": {
+    "headline": "把高刷屏、桌边 AI 和备份安全讲成整套方案",
+    "summary": "高刷显示器、桌边 AI 与私有云继续抬高客单；真正要提前说明的，是 NAND 锁价、DDR4 回潮和交付后的备份安全。",
+    "mobileSections": [
+      {
+        "name": "电竞玩家机会",
+        "summary": "高刷高分一体屏、500Hz OLED 和带屏机箱，继续承担门店引流与抬客单任务。"
+      },
+      {
+        "name": "生产力玩家机会",
+        "summary": "桌边 AI 工作站、素材私有云和高配迷你机，让创作单更像一套方案单。"
+      },
+      {
+        "name": "配置与成本信号",
+        "summary": "NAND 锁价、内存缓解期后移与 DDR4 回潮，都会直接影响今天的报价节奏。"
+      },
+      {
+        "name": "销售话术与服务",
+        "summary": "散热舱室、UPS 备份和可擦除存储，让服务价值开始替代单纯卷参数。"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "电竞玩家机会",
+      "subtitle": "ESPORTS · DISPLAYS · SHOW BUILDS",
+      "items": [
+        {
+          "title": "MSI/GIGABYTE 5K Mini-LED | 高刷高分一屏通吃",
+          "description": "Tom's Hardware 6 月 7 日称，MSI 与技嘉都把 27 英寸 5K Mini-LED 做到 2304 分区，并可切到 4K 220Hz 或 QHD 330Hz。对既打竞技又兼顾内容创作的客户，一台屏就能把整机和显卡预算同时往上带。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/monitors/msi-gigabyte-debut-new-5k-27-inch-mini-led-monitors-with-2-304-dimming-zones-and-glossy-panel-both-models-double-the-native-180-hz-refresh-rate-to-330-hz-at-1440p",
+          "sourceDateLabel": "2026-06-07"
+        },
+        {
+          "title": "MSI MAG 272QP QD-OLED X50 | 500Hz继续抬高刷单",
+          "description": "Tom's Guide 6 月 9 日评测称，MSI 这台 27 英寸 QD-OLED 屏给到 500Hz、0.03ms 和接近专业级色准。对 FPS 玩家与兼顾修图剪片的客户，高刷屏本身就足够成为整机升档理由。",
+          "sourceName": "Tom's Guide",
+          "sourceUrl": "https://www.tomsguide.com/computing/monitors/msi-mag-272qp-qd-oled-x50-review",
+          "sourceDateLabel": "2026-06-09"
+        },
+        {
+          "title": "AORUS C510 Glass Infinity | 带屏机箱先拉住眼球",
+          "description": "PC Gamer 6 月 4 日更新称，技嘉这款 mATX 机箱侧面直接集成 16 英寸 165Hz IPS 屏，并保留提手便于搬运。门店若要做展厅样机或 LAN 主题机，这种自带传播点的机箱更容易先把客流留下。",
+          "sourceName": "PC Gamer",
+          "sourceUrl": "https://www.pcgamer.com/hardware/pc-cases/gigabyte-has-shown-off-a-microatx-pc-case-with-a-16-inch-built-in-lcd-screen-which-i-assume-would-give-you-the-most-unique-rig-at-the-next-lan-party/",
+          "sourceDateLabel": "2026-06-04 · 邻近窗口"
+        }
+      ]
+    },
+    {
+      "name": "生产力玩家机会",
+      "subtitle": "LOCAL AI · CREATOR DESKS · PRIVATE CLOUD",
+      "items": [
+        {
+          "title": "Lenovo ThinkStation PGX | 桌边AI站适合项目单",
+          "description": "TechRadar Pro 6 月 9 日评测称，ThinkStation PGX 以 GB10 和 128GB 内存主打本地大模型测试，还支持多机串联。面对企业研发、设计团队和本地 AI 试点，门店更容易把它卖成桌边项目节点而非普通主机。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/lenovo-thinkstation-pgx-mini-pc-workstation-review",
+          "sourceDateLabel": "2026-06-09"
+        },
+        {
+          "title": "UGREEN DXP4800 GT | 4K素材私有云更好卖",
+          "description": "TechRadar Pro 6 月 8 日评测称，DXP4800 GT 给到双 10GbE、四盘位、双 M.2 和 RAID 5，10GbE 下读写可逼近 1.1GB/s。对拍摄、剪辑和小团队协作客户，素材私有云比单卖大硬盘更容易抬高整单价值。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/ugreen-nasync-dxp4800-gt-nas-review",
+          "sourceDateLabel": "2026-06-08"
+        },
+        {
+          "title": "Geekom A9 Max 2026 | 小体积创作机趁促销切入",
+          "description": "TechRadar Pro 6 月 8 日报道，A9 Max 2026 版把 Ryzen 9 HX470、32GB DDR5 和 2TB SSD 做进迷你机身，并给出 18% 限时折扣。对桌面空间紧、又想跑本地 AI 和创作工具的客户，小体积高配机正适合切入升级单。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/geekoms-high-performance-ai-mini-pc-gets-a-massive-discount-with-our-exclusive-money-off-code-ahead-of-prime-day-not-even-amazon-can-beat-it-on-price",
+          "sourceDateLabel": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "name": "配置与成本信号",
+      "subtitle": "MEMORY · NAND · BUDGETING",
+      "items": [
+        {
+          "title": "Biwin 3D NAND 合约 | SSD报价要留波动口",
+          "description": "Tom's Hardware 6 月 11 日称，Biwin 为锁定未来两年 NAND 供应签下 18.6 亿美元固定价合约。对装机店来说，这说明 SSD 成本波动还没过去，整机报价不能只盯今天的现货价。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/ssds/crushing-shortages-force-biwin-into-usd1-86-billion-nand-deal-for-ssds-multi-year-agreement-locks-in-fixed-pricing-as-spot-market-threatens-to-dry-up",
+          "sourceDateLabel": "2026-06-11"
+        },
+        {
+          "title": "AMD 内存产能判断 | DDR5回落别押太早",
+          "description": "PC Gamer 6 月 9 日转述 AMD 负责人判断，新增产能会逐步爬坡，但内存危机缓解更像 2027 到 2028 年的事。门店做高频 DDR5 配置时，不该把“再等等会降价”当成默认承诺。",
+          "sourceName": "PC Gamer",
+          "sourceUrl": "https://www.pcgamer.com/hardware/memory/the-thing-that-gives-me-hope-is-there-is-an-enormous-amount-of-capacity-being-built-amds-head-of-ryzen-and-radeon-is-pinning-hopes-of-an-end-to-the-memory-crisis-on-a-supply-ramp-into-2028/",
+          "sourceDateLabel": "2026-06-09"
+        },
+        {
+          "title": "DDR4 平台回产 | 预算单先留两套说法",
+          "description": "Tom's Hardware 6 月 4 日称，主板厂和模组厂已开始重启 DDR4 内存与主板产线，以应对 DDR5 涨价带来的装机门槛。面对学生机和办公机客户，先准备 DDR4/DDR5 两套话术会比硬推新平台更稳。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/ram/production-of-ddr4-memory-and-motherboards-is-restarting-amid-unprecedented-memory-shortages-pc-industry-preparing-for-a-world-without-ddr5",
+          "sourceDateLabel": "2026-06-04 · 邻近窗口"
+        }
+      ]
+    },
+    {
+      "name": "销售话术与服务",
+      "subtitle": "DELIVERY · BACKUP · TRUST",
+      "items": [
+        {
+          "title": "Phanteks EX 系列 | 显卡独立风道能讲交付",
+          "description": "PC Gamer 6 月 11 日报道，Phanteks EX 机箱把 GPU 分出独立舱室，高阶款还自带冷排、LCD 与温感灯带。销售若能把温度、噪音和后续清洁讲成交付价值，比海景房颜值更能打动理性客户。",
+          "sourceName": "PC Gamer",
+          "sourceUrl": "https://www.pcgamer.com/hardware/pc-cases/phanteks-shows-off-pc-case-that-bucks-the-fish-tank-trend-in-favour-of-greater-thermal-efficiency-and-giving-your-gpu-its-own-little-room/",
+          "sourceDateLabel": "2026-06-11"
+        },
+        {
+          "title": "UGREEN DH2300 + UPS | 备份加购更好落地",
+          "description": "TechRadar Pro 6 月 8 日称，DH2300 两盘位 NAS 叠加 UPS 套装后主打私有云、备份与断电保护，折后 276 美元。做家庭照片库、小店账务和门店素材备份时，这类带电源保护的加购更容易成交。",
+          "sourceName": "TechRadar Pro",
+          "sourceUrl": "https://www.techradar.com/pro/want-your-own-private-cloud-ugreen-nasync-dh2300-is-on-sale-in-the-companys-own-prime-day-event-with-discounts-on-nas-devices-across-the-site",
+          "sourceDateLabel": "2026-06-08"
+        },
+        {
+          "title": "T-Create Expert P35SG | 失联可擦除能卖安全",
+          "description": "Tom's Hardware 6 月 4 日称，T-Create Expert P35SG 可通过 4G LTE 收到短信后执行逻辑擦除并触发物理损毁。面对律所、差旅团队和甲方外勤客户，“丢了也能灭失数据”已经可以做成单独收费的安全服务。",
+          "sourceName": "Tom's Hardware",
+          "sourceUrl": "https://www.tomshardware.com/pc-components/ssds/teamgroup-shows-off-external-ssd-with-wireless-self-destruct-function-t-create-expert-p35sg-external-ssd-can-be-wiped-with-a-single-text-message",
+          "sourceDateLabel": "2026-06-04 · 邻近窗口"
+        }
+      ]
+    }
+  ]
+}
