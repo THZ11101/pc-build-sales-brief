@@ -1,0 +1,142 @@
+{
+    "date":  "2026-06-14",
+    "weekday":  "星期日",
+    "industry":  "电脑DIY销售组装服务",
+    "publicTitle":  "The PC Build Sales Brief",
+    "chineseTitle":  "每日装机销售简报",
+    "opening":  "今天更容易成交的，是把高刷体验、桌边 AI 和后续维护一次讲透的整机方案。",
+    "insight":  "今天的成交线索很清楚：前台靠双模高刷屏、轻量海景箱和 8K 键盘吸睛，中段靠 AI 迷你站、10GbE 小主机和开发盒拉高客单，后端再用 EXPO ULL、显卡换代节奏和内存涨价解释为什么现在就该定配置。真正决定利润的，是能不能把快拆风扇、供电监控和少维护热界面讲成长期省心。",
+    "methodNote":  "本期面向 DIY 销售组装服务，采集窗口为 2026-06-08 至 2026-06-14，优先采用品牌动态、可信硬件媒体评测与现场报道；超出窗口的资料已标注“邻近窗口”，并避开历史简报标题与 sourceUrl 重复。",
+    "homepage":  {
+                     "headline":  "把高刷、桌边 AI 和省心交付打包成整机方案",
+                     "summary":  "双模高刷、AI 迷你站和 10GbE 小主机继续抬客单；EXPO ULL、显卡换代节奏和内存涨价则要求报价更快、更稳。",
+                     "mobileSections":  [
+                                            {
+                                                "name":  "电竞玩家机会",
+                                                "summary":  "双模高刷屏、轻量海景箱和 8K 键盘，继续承担高颜值电竞单的引流与抬价任务。"
+                                            },
+                                            {
+                                                "name":  "生产力玩家机会",
+                                                "summary":  "AI 迷你站、10GbE 小主机和开发盒，让本地模型与内容工位更像一套方案单。"
+                                            },
+                                            {
+                                                "name":  "配置与成本信号",
+                                                "summary":  "老 AM5 板再提帧、显卡换代延后与内存涨价预期，正在重写今天的报价节奏。"
+                                            },
+                                            {
+                                                "name":  "销售话术与服务",
+                                                "summary":  "快拆风扇、供电监控和少维护热界面，让交付省心开始替代单纯卷参数。"
+                                            }
+                                        ]
+                 },
+    "sections":  [
+                     {
+                         "name":  "电竞玩家机会",
+                         "subtitle":  "ESPORTS · DISPLAYS · ADD-ONS",
+                         "items":  [
+                                       {
+                                           "title":  "AORUS FO32U24GP / FM275K16P | 双模高刷继续抬单",
+                                           "description":  "Tom\u0027s Hardware 6 月 1 日称，技嘉把 4K 240Hz / 1080p 480Hz OLED 和 5K 165Hz / QHD 330Hz Mini-LED 一起带到 Computex。对既打竞技又兼顾内容的客户，一台屏就足以带动显卡、主机和外设预算同步上探。",
+                                           "sourceName":  "Tom\u0027s Hardware",
+                                           "sourceUrl":  "https://www.tomshardware.com/monitors/gaming-monitors/gigabyte-debuts-fourth-gen-tandem-woled-and-multi-mode-mini-led-gaming-monitors-27-to-32-inches-up-to-480-hz-and-up-to-5k-resolution",
+                                           "sourceDateLabel":  "2026-06-01 · 邻近窗口"
+                                       },
+                                       {
+                                           "title":  "HAVN HS 360 | 小一圈海景箱更易成交",
+                                           "description":  "PC Gamer 6 月 12 日称，HS 360 把全景玻璃机箱做得更轻、更短，同时尽量保住散热、背插和大显卡兼容。对做展示样机和当日可交付整机的门店，小一圈但不缩水的海景箱更利于现场成交。",
+                                           "sourceName":  "PC Gamer",
+                                           "sourceUrl":  "https://www.pcgamer.com/hardware/pc-cases/havns-beautiful-new-hs-360-is-a-smaller-lighter-panoramic-pc-case-without-the-usual-downsides/",
+                                           "sourceDateLabel":  "2026-06-12"
+                                       },
+                                       {
+                                           "title":  "Cherry XTRFY K63W Pro | 外设加购能接住高刷单",
+                                           "description":  "Tom\u0027s Hardware 6 月 2 日评测称，K63W Pro 给到 8K 轮询、UWB 无线和极低输入延迟。面对高刷整机客户，门店别只讲主机参数，把键鼠延迟和桌面手感一起打包，反而更容易把电竞单做成完整生态单。",
+                                           "sourceName":  "Tom\u0027s Hardware",
+                                           "sourceUrl":  "https://www.tomshardware.com/peripherals/gaming-keyboards/cherry-xtrfy-k63w-pro-review",
+                                           "sourceDateLabel":  "2026-06-02 · 邻近窗口"
+                                       }
+                                   ]
+                     },
+                     {
+                         "name":  "生产力玩家机会",
+                         "subtitle":  "LOCAL AI · MINI PCS · CREATOR DESKS",
+                         "items":  [
+                                       {
+                                           "title":  "Bosgame M5 AI | AI迷你站先做试单",
+                                           "description":  "TechRadar 6 月 13 日更新的迷你主机榜单把 Bosgame M5 AI 放在“最适合 AI”的位置，核心是 Ryzen AI Max+ 395 与最高 128GB 内存。对要试跑本地模型和轻创作工位的客户，它适合先做高毛利试单。",
+                                           "sourceName":  "TechRadar",
+                                           "sourceUrl":  "https://www.techradar.com/best/mini-pcs",
+                                           "sourceDateLabel":  "2026-06-13"
+                                       },
+                                       {
+                                           "title":  "Beelink Wildcat Lake | 入门迷你机也能带10GbE",
+                                           "description":  "TechRadar Pro 6 月 2 日报道，Beelink 把 10GbE 下放到入门级 Wildcat Lake 迷你机，并强调 AI 推理、软路由和 NAS 场景。对小办公室、工作室和家庭服务器客户，门店能顺手带出交换机、存储和备份加购。",
+                                           "sourceName":  "TechRadar Pro",
+                                           "sourceUrl":  "https://www.techradar.com/pro/beelink-makes-history-by-becoming-the-first-pc-manufacturer-to-roll-out-10gbe-lan-ports-across-entry-level-mini-pcs",
+                                           "sourceDateLabel":  "2026-06-02 · 邻近窗口"
+                                       },
+                                       {
+                                           "title":  "Surface RTX Spark Dev Box | 本地模型演示盒先占位",
+                                           "description":  "Windows Central 6 月 2 日称，微软的 Surface RTX Spark Dev Box 主打 1 PFLOP AI 算力、128GB 统一内存与 120B 参数本地运行。对做开发验证、企业演示和桌边 AI 方案的客户，门店可以先把开发盒讲成服务入口。",
+                                           "sourceName":  "Windows Central",
+                                           "sourceUrl":  "https://www.windowscentral.com/hardware/surface/microsoft-surface-rtx-spark-dev-box-mini-pc-announcement-2026",
+                                           "sourceDateLabel":  "2026-06-02 · 邻近窗口"
+                                       }
+                                   ]
+                     },
+                     {
+                         "name":  "配置与成本信号",
+                         "subtitle":  "TUNING · GPU TIMING · PRICE PRESSURE",
+                         "items":  [
+                                       {
+                                           "title":  "AMD EXPO ULL BIOS | 老AM5板也能再提帧",
+                                           "description":  "Tom\u0027s Hardware 6 月 12 日称，多家厂商已把 AMD EXPO ULL 支持下放到 600 系 AM5 主板。对已买老板的升级客户，这意味着不用整套换平台也能继续追低延迟，但报价时要把 BIOS 与内存适配一起讲清。",
+                                           "sourceName":  "Tom\u0027s Hardware",
+                                           "sourceUrl":  "https://www.tomshardware.com/pc-components/motherboards/various-vendors-add-amd-expo-ull-support-to-600-series-motherboards-amds-ultra-low-latency-memory-profile-comes-to-am5",
+                                           "sourceDateLabel":  "2026-06-12"
+                                       },
+                                       {
+                                           "title":  "AMD RDNA 5 节奏 | 显卡换代别替客户空等",
+                                           "description":  "Tom\u0027s Hardware 6 月 7 日转述 Computex 现场 AIB 说法，RDNA 5 游戏显卡更像要到明年偏后段才会出现。对准备上中高端显卡的客户，销售不该默认劝等下一代，而该把现有平台寿命和现货价值讲透。",
+                                           "sourceName":  "Tom\u0027s Hardware",
+                                           "sourceUrl":  "https://www.tomshardware.com/pc-components/gpus/amd-rdna-5-gaming-gpus-are-coming-late-next-year-according-to-aibs-at-computex",
+                                           "sourceDateLabel":  "2026-06-07 · 邻近窗口"
+                                       },
+                                       {
+                                           "title":  "NVIDIA × SK hynix | AI内存锁供继续施压",
+                                           "description":  "Tom\u0027s Hardware 6 月 9 日称，NVIDIA 与 SK hynix 签下多年内存联合开发与供货协议，覆盖 HBM4、LPDDR5X 与 3D NAND。对 DIY 门店来说，这说明上游高价值产能会继续向 AI 倾斜，内存与 SSD 报价更该留出缓冲和时效。",
+                                           "sourceName":  "Tom\u0027s Hardware",
+                                           "sourceUrl":  "https://www.tomshardware.com/pc-components/dram/nvidia-and-sk-hynix-ink-multi-year-memory-co-development-and-supply-agreement-seeks-to-address-extended-development-cycles",
+                                           "sourceDateLabel":  "2026-06-09"
+                                       }
+                                   ]
+                     },
+                     {
+                         "name":  "销售话术与服务",
+                         "subtitle":  "DELIVERY · COOLING · POWER SAFETY",
+                         "items":  [
+                                       {
+                                           "title":  "Levelplay MagBracket / Newtro 360 | 快拆维护更好讲服务",
+                                           "description":  "PC Gamer 6 月 8 日报道，Levelplay 用磁吸支架做风扇方向切换，还把一体水做成更易补液和维修的结构。对售后依赖强的装机店，这类“拆得快、修得快”的设计更容易转成付费维护与清洁服务。",
+                                           "sourceName":  "PC Gamer",
+                                           "sourceUrl":  "https://www.pcgamer.com/hardware/cooling/levelplay-cuts-to-the-chase-with-a-fan-on-a-magnetically-attached-bracket-and-a-liquid-cooler-thats-easy-to-refill-and-fix/",
+                                           "sourceDateLabel":  "2026-06-08"
+                                       },
+                                       {
+                                           "title":  "Corsair AX1600i Shift | 供电监控更适合做托底",
+                                           "description":  "PC Gamer 6 月 4 日称，新 AX1600i Shift 加入双 12V-2x6、逐针脚监控和更短机身。面对高功耗显卡客户，门店可以把供电告警、线材检查和后续巡检讲成托底服务，而不是只给一颗大瓦数电源。",
+                                           "sourceName":  "PC Gamer",
+                                           "sourceUrl":  "https://www.pcgamer.com/hardware/power-supplies/corsairs-range-topping-ax1600i-power-supply-gets-some-much-needed-upgrades-including-pin-monitoring-proper-gpu-power-sockets-and-a-reduction-in-size/",
+                                           "sourceDateLabel":  "2026-06-04 · 邻近窗口"
+                                       },
+                                       {
+                                           "title":  "Noctua NT-CP1 热垫 | 少折腾维护能卖长期",
+                                           "description":  "PC Gamer 6 月 1 日称，Noctua 的相变热垫正尝试替代传统硅脂，并主打长期稳定与低维护。对想减少返修、又在意多年后性能一致性的客户，门店完全可以把“少拆少换”讲成更高阶的托管价值。",
+                                           "sourceName":  "PC Gamer",
+                                           "sourceUrl":  "https://www.pcgamer.com/hardware/cooling/noctuas-new-phase-changing-thermal-pad-could-be-a-long-term-alternative-to-thermal-paste/",
+                                           "sourceDateLabel":  "2026-06-01 · 邻近窗口"
+                                       }
+                                   ]
+                     }
+                 ]
+}
